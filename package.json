@@ -13,6 +13,7 @@
   "browser": "./lib/index.js",
   "typings": "./lib/index-types.d.ts",
   "scripts": {
+    "dev": "vite",
     "start": "npm run test:watch",
     "compile": "npm run clean && npm run tsc && cp ./src/index-types.d.ts ./lib/index-types.d.ts && npm run rollup",
     "build": "npm run compile && cp ./src/index-types.d.ts ./lib && gulp build && node ./rename-imports.mjs",
@@ -85,7 +86,10 @@
     "size-limit": "^11.0.1",
     "ts-mocha": "^10.0.0",
     "ts-node": "^10.9.2",
-    "typescript": "^5.3.3"
+    "typescript": "^5.3.3",
+    "vite": "^5.2.0",
+    "@types/node": "^20.14.9",
+    "@vitejs/plugin-react-swc": "^3.5.0"
   },
   "keywords": [
     "canvas",

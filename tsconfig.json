@@ -5,11 +5,13 @@
     "target": "ES2018",
     // "sourceMap": true,
     "noEmitOnError": true,
-    "lib": ["ES2019", "dom"],
+    "lib": [
+      "ES2019",
+      "dom"
+    ],
     "moduleResolution": "node",
     "declaration": true,
     "removeComments": false,
-
     "strict": true,
     "noImplicitAny": false,
     "noImplicitThis": false,
@@ -18,7 +20,13 @@
     // probably we would never enable this one
     // because it's too strict, konva generates many functions on the runtime
     "strictPropertyInitialization": false,
-    
   },
-  "include": ["./src/**/*.ts"],
+  "include": [
+    "src"
+  ],
+  "references": [
+    {
+      "path": "./tsconfig.node.json"
+    }
+  ]
 }
